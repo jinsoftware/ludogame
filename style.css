@@ -1,50 +1,46 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
   text-align: center;
-  background: #f4f4f4;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 0;
 }
 
-.title {
-  background: linear-gradient(to right, #facc15, #f87171);
-  color: #222;
+h1 {
+  background: #ffd54f;
   padding: 10px;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 0;
 }
 
-.board {
+.ludo-board {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 300px;
-  height: 300px;
+  gap: 20px;
+  max-width: 500px;
   margin: 30px auto;
-  border: 5px solid #333;
+}
+
+.player {
+  background: white;
+  border: 3px solid #444;
+  padding: 20px;
+  border-radius: 10px;
   position: relative;
 }
 
-.zone {
-  width: 100%;
-  height: 100%;
-}
+.green { background: #a5d6a7; }
+.red { background: #ef9a9a; }
+.yellow { background: #fff59d; }
+.blue { background: #90caf9; }
 
-.red { background-color: #ef4444; }
-.green { background-color: #10b981; }
-.blue { background-color: #3b82f6; }
-.yellow { background-color: #eab308; }
-
-.center {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.dice {
+  font-size: 30px;
   background: white;
-  top: 100px;
-  left: 100px;
+  padding: 10px 20px;
   border-radius: 10px;
-  border: 2px dashed #444;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
+  margin: 10px auto;
+  width: fit-content;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #444;
 }
