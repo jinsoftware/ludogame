@@ -3,24 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ludo Game Interface</title>
+  <title>Ludo King Style UI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 class="title">🎲 Ludo King - Demo UI 🎲</h1>
-  
-  <div class="board">
-    <div class="zone red"></div>
-    <div class="zone green"></div>
-    <div class="zone blue"></div>
-    <div class="zone yellow"></div>
-    <div class="center">
-      <p>Safe Zone</p>
+  <h1>Ludo King - UI Demo</h1>
+  <div class="ludo-board">
+    <div class="player green">
+      <div class="dice" onclick="rollDice('green')">🎲</div>
+      <p id="green-result">-</p>
+    </div>
+    <div class="player red">
+      <div class="dice" onclick="rollDice('red')">🎲</div>
+      <p id="red-result">-</p>
+    </div>
+    <div class="player yellow">
+      <div class="dice" onclick="rollDice('yellow')">🎲</div>
+      <p id="yellow-result">-</p>
+    </div>
+    <div class="player blue">
+      <div class="dice" onclick="rollDice('blue')">🎲</div>
+      <p id="blue-result">-</p>
     </div>
   </div>
-
-  <button onclick="rollDice()">🎲 Roll Dice</button>
-  <div id="diceResult">Result: -</div>
 
   <script src="script.js"></script>
 </body>
